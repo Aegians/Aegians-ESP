@@ -26,11 +26,11 @@ This project has been written and tested with and only with [Synapse X](https://
     - **gethiddenproperty**
 </details>
 
-This project also uses [Exunys' Config Library](https://github.com/Exunys/Config-Library) as a way of storing user settings, meaning, your script executor must support the dependencies for the module if you want the *configuration storing & loading functions* in the ESP module to function.
+This project also uses [Aegians' Config Library](https://github.com/Aegians/Config-Library) as a way of storing user settings, meaning, your script executor must support the dependencies for the module if you want the *configuration storing & loading functions* in the ESP module to function.
 
 ### 📜 License
-This project is completely free and open sourced. But, that does not mean you own rights to it. Read this [document](https://github.com/Exunys/Exunys-ESP/blob/main/LICENSE) for more information.
-You can re-use / stitch this script or any system of this project into any of your repositories, as long as you credit the developer [Exunys](https://github.com/Exunys).
+This project is completely free and open sourced. But, that does not mean you own rights to it. Read this [document](https://github.com/Aegians/Aegians-ESP/blob/main/LICENSE) for more information.
+You can re-use / stitch this script or any system of this project into any of your repositories, as long as you credit the developer [Aegians](https://github.com/Aegians).
 
 ## 📑 Update log (DD/MM/YYYY): 
 
@@ -43,8 +43,8 @@ You can re-use / stitch this script or any system of this project into any of yo
 
 # 📋 Documentation
 
-### The documentation for the interactive functions of this module can be found by clicking [here](https://exunys.gitbook.io/exunys-esp-documentation/) or at the following link:
-### https://exunys.gitbook.io/exunys-esp-documentation/
+### The documentation for the interactive functions of this module can be found by clicking [here](https://Aegians.gitbook.io/Aegians-esp-documentation/) or at the following link:
+### https://Aegians.gitbook.io/Aegians-esp-documentation/
 
 More detailed information for this project will be documented by time in this README.md document.
 
@@ -52,19 +52,19 @@ More detailed information for this project will be documented by time in this RE
 
 First of all, to implement the module in your script's environment you must use the function `loadstring` like below:
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Exunys-ESP/main/src/ESP.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Aegians/Aegians-ESP/main/src/ESP.lua"))()
 ```
 The code above loads the module's environment in your script executor's global environment meaning it will be archivable across every script.
 
-The identificator for the environment is `ExunysDeveloperESP` which is a table that has configurable settings and interactive user functions.
+The identificator for the environment is `AegiansDeveloperESP` which is a table that has configurable settings and interactive user functions.
 
 The table loaded into the exploit's global environment by the module has a [*metatable*](https://create.roblox.com/docs/scripting/luau/metatables) set to it with a **__call** metamethod, meaning you can call the table which would wrap every player in the game and render a crosshair.
 ```lua
-ExunysDeveloperESP()
+AegiansDeveloperESP()
 ```
 This is equivalent to the `Load` function (which would be more optimized and faster).
 ```lua
-ExunysDeveloperESP.Load()
+AegiansDeveloperESP.Load()
 ```
 
 This module has customizable settings for every drawing property and other miscellaneous properties with unique functions. You can see the configurable settings below.
@@ -72,9 +72,9 @@ This module has customizable settings for every drawing property and other misce
 <details> <summary> The script's configurable settings </summary>
 
 ```lua
-getgenv().ExunysDeveloperESP = {
+getgenv().AegiansDeveloperESP = {
 	DeveloperSettings = {
-		Path = "Exunys Developer/Exunys ESP/Configuration.cfg",
+		Path = "Aegians Developer/Aegians ESP/Configuration.cfg",
 		UnwrapOnCharacterAbsence = false,
 		UpdateMode = "RenderStepped",
 		TeamCheckOption = "TeamColor",
@@ -241,11 +241,11 @@ https://user-images.githubusercontent.com/76539058/232102118-14961c64-bb39-41aa-
 The settings for the video above:
 
 ```lua
-ExunysDeveloperESP.RenderCrosshair()
+AegiansDeveloperESP.RenderCrosshair()
 
-ExunysDeveloperESP.DeveloperSettings.RainbowSpeed = 2.5
+AegiansDeveloperESP.DeveloperSettings.RainbowSpeed = 2.5
 
-local CrosshairProperties = ExunysDeveloperESP.Properties.Crosshair
+local CrosshairProperties = AegiansDeveloperESP.Properties.Crosshair
 
 CrosshairProperties.RainbowColor = true
 CrosshairProperties.Position = 2
@@ -268,11 +268,11 @@ CrosshairProperties.CenterDot.Color = Color3.fromHex("#FFFFFF")
 ## Wrapping & unwrapping Parts / NPCs
 Wrapping objects:
 ```rust
-<string> Hash | ExunysDeveloperESP.WrapObject(<Instance> Object[, <string> Pseudo Name, <table> Allowed Visuals, <uint> Distance])
+<string> Hash | AegiansDeveloperESP.WrapObject(<Instance> Object[, <string> Pseudo Name, <table> Allowed Visuals, <uint> Distance])
 ```
 Unwrapping objects:
 ```rust
-<void> | ExunysDeveloperESP.UnwrapObject(<Instance/string> Object / Hash)
+<void> | AegiansDeveloperESP.UnwrapObject(<Instance/string> Object / Hash)
 ```
 
 ### ❗ Notice
@@ -290,10 +290,10 @@ for Index, Value in next, workspace.Landmines:GetChildren() do
 		continue 
 	end
     
-	local Hash = ExunysDeveloperESP.WrapObject(Part, "Landmine "..Index, {Tracer = false})
+	local Hash = AegiansDeveloperESP.WrapObject(Part, "Landmine "..Index, {Tracer = false})
 
 	task.delay(3, function()
-		ExunysDeveloperESP.UnwrapObject(Hash)
+		AegiansDeveloperESP.UnwrapObject(Hash)
 	end)
 end
 ```
@@ -307,7 +307,7 @@ These 2 functions also apply to players & NPCs (anything with a character).
 <details> <summary> Code example </summary>
 
 ```lua
-ExunysDeveloperESP.WrapObject(workspace.Dummys.Dummy, "Dumb Dummy")
+AegiansDeveloperESP.WrapObject(workspace.Dummys.Dummy, "Dumb Dummy")
 
 -- The object parsed in the first parameter is a model that has a R15 character rig and a humanoid (which it must contain)
 ```
