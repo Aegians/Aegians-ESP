@@ -298,7 +298,7 @@ for Index, Value in next, workspace.Landmines:GetChildren() do
 end
 ```
 
-https://user-images.githubusercontent.com/76539058/232627964-8230c006-770c-4f8a-a101-b5c2fd2e5d91.mp4
+
 
 </details>
 
@@ -312,6 +312,6 @@ AegiansDeveloperESP.WrapObject(workspace.Dummys.Dummy, "Dumb Dummy")
 -- The object parsed in the first parameter is a model that has a R15 character rig and a humanoid (which it must contain)
 ```
 
-https://user-images.githubusercontent.com/76539058/232631988-18d8a058-db4a-4d24-b7e1-ff7909ef527e.mp4
+
 
 </details>
