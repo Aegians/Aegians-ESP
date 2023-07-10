@@ -43,8 +43,8 @@ You can re-use / stitch this script or any system of this project into any of yo
 - [**v1.2.1b**] Optimizations, fixed errors, and decreased latency between the ESP returning connections </details>
 # 📋 Documentation
 
-### The documentation for the interactive functions of this module can be found by clicking [here](https://Aegians.gitbook.io/Aegians-esp-documentation/) or at the following link:
-### https://Aegians.gitbook.io/Aegians-esp-documentation/
+### The documentation for the interactive functions of this module can be found by clicking [here](https://aegians.gitbook.io/esp-library/) or at the following link:
+### https://aegians.gitbook.io/esp-library/
 
 More detailed information for this project will be documented by time in this README.md document.
 
