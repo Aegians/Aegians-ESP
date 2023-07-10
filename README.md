@@ -9,7 +9,7 @@ This project is in beta testing, feel free to create pull requests (you will get
 This project has been inspired from [AxisHub](https://github.com/Aegians/AxisHub) which has an improved version of my [old examplery discontinued wall hack script](https://github.com/Aegians/wallcheck). It has a CS:GO-styled look which looks beautiful for fps games.
 
 ### ❗ Notice
-This project has been written and tested with and only with [Synapse X](https://x.synapse.to) however, I will attempt my best to modulize support for every exploit. So far, the required functions for this module to run will be listed below:
+This project has been written and tested with and only with [Synapse X](https://x.synapse.to) however, this does currently work on Scriptware/Scriptware-Mac, Hydrogen, Sirhurt, KRNL, OxygenU and Fluxus. So far, the required functions for this module to run will be listed below:
 
 <details> <summary> Dependencies (required functions & libraries): </summary>
 
