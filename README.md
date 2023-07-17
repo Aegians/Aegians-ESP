@@ -52,7 +52,7 @@ More detailed information for this project will be documented by time in this RE
 
 First of all, to implement the module in your script's environment you must use the function `loadstring` like below:
 ```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Aegians/Aegians-ESP/main/src/ESP.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Aegians/Aegians-ESP/main/ESP.lua")()
 ```
 The code above loads the module's environment in your script executor's global environment meaning it will be archivable across every script.
 
