@@ -1,4 +1,4 @@
-#  Christians ESP 
+#  Open Sourced ESP 
 
 This project represents a collection of visuals / wall hacks (Tracers, ESP, Boxes, Head Dots, Chams & Crosshair). This script is also undetected because it uses [Synapse X's Drawing Library](https://docs.synapse.to/docs/reference/drawing_lib.html). It has modulized support for NPCs & parts and it offers a very simple and easy to use wrapping and unwrapping system.
 
